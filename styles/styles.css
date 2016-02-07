@@ -9,68 +9,51 @@ body {
 /**** HEADER ****/
 
 header {
-  height: 600px;
-  width: 100%;
+  height: 100vh;
+  margin:0;
   background-image: url("../images/header.jpg");
   background-size: cover;
-  display: flex;
+  background-repeat: no-repeat;
 }
 
 .logo-div {
-  margin-left: 150px;
-  margin-top: 20px;
-  width: 290px;
-  height: 50px;
-  display: flex;
-  flex-direction: row;
+  margin-left: 4em;
+  margin-top: 3em;
+  display: inline-flex;
+}
+
+.logo-div img {
+  height: 60px;
 }
 
 .logo-div h3 {
-  align-self: center;
+  padding-left: 15px;
   font-family: 'Muli';
   font-size: 1em;
   font-weight: bolder;
-  padding-left: 15px;
   color: #12232E;
 }
 
-.title {
-  display: flex;
-  margin-left: -60px;
-  flex-direction: column;
-  align-self: center;
-  justify-content: center;
+nav {
+  margin-right: 3em;
+  display: block;
+  float: right;
+  margin-top: 3em;
+  position: relative;
 }
 
-.title h1 {
-  align-self: center;
-  font-family: 'Muli';
-  font-size: 6em;
-  color: #fff;
-  text-align: center;
-  font-weight: 400;
-  margin-bottom: -35px;
-}
-
-#sub-heading {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  color: #31385c;
-  text-align: center;
-}
-
-.nav {
-  position: absolute;
-  margin-left: 850px;
+nav ul {
+  position: relative;
+  margin-top: 0px;
   display: inline-flex;
-  width: 140px;
-  height: 30px;
   list-style: none;
   font-family: 'Oswald';
+  font-stretch: expanded;
   font-size: 1.1em;
 }
 .nav li {
-  padding: 15px;
+  justify-content: flex-end;
+  padding: 10px 15px 0px 10px;
 }
 
 .nav a:link {
@@ -87,6 +70,24 @@ header {
   color:#17303F;
   }
 
+.title h1 {
+  margin-top: 15%;
+  font-family: 'Muli';
+  font-size: 6em;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.title h3 {
+  margin-top: 0;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  color: #31385c;
+  text-align: center;
+}
+
 /**** CONTENT ****/
 
 .main {
@@ -99,8 +100,8 @@ header {
 .content {
   width: 50%;
   height: 1000px;
-  margin-top: 20px;
-  margin-left: 130px;
+  margin-top: 2em;
+  margin-left: 10%;
 }
 
 #content-title {
@@ -239,49 +240,46 @@ header {
 /**** SIDEBAR ****/
 
 .aside {
+  margin-left: 2.5em;
   width: 30%;
-  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
   height: 1000px;
-  margin-top: 20px;
 }
 
 #sidebar-image-1 {
-  position: relative;
-  margin-top: 50px;
-  margin-left: 210px;
-  padding-bottom: 15px;
+  margin-top: 3em;
+  margin-left: 45%;
 }
 
 .aside a:link {
     text-decoration: none;
     color: #067AB4;
-  }
+}
 .aside a:visited {
     color: #067AB4;
   }
 .aside a:hover {
     color: #fff;
-  }
+}
 .aside a:active {
     color:#067AB4;
-  }
+}
 
 #name-link-2 {
-  position: relative;
-  margin-left: 210px;
-  width: 100px;
+  text-align: center;
   font-family: 'Muli';
   font-size: .90em;
+  padding-top: 10px;
   padding-bottom: 10px;
 }
 #ul-aside {
   list-style: none;
-  width: 250px;
   font-family: 'Oswald';
   font-size: 1em;
   position: relative;
-  margin-left: 120px;
-  margin-top: 5px;
+  margin-left: 25%;
 }
 .social-media {
   float: left;
@@ -293,9 +291,10 @@ header {
 #ul-aside a:active {color:#ACC0C6;}
 
 #sidebar-image-2 {
+  margin-left: 2em;
+  width: 90%;
   position: relative;
   margin-top: 25px;
-  margin-left: 100px;
 }
 #sidebar-heading {
   font-family: 'Oswald';
@@ -327,6 +326,7 @@ header {
 }
 
 .footer-link {
+  margin-top: 3em;
   width: 25%;
   height: 400px;
   background-size: cover;
